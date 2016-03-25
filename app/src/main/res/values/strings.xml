@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Task-app-1</string>
+    <string name="action_settings">Settings</string>
+    <string name="head">Note cat</string>
+    <string name="condition">In progress</string>
+    <string name="created">Created</string>
+    <string name="dateCreated">March 20, 2016</string>
+    <string name="registered">Registered</string>
+    <string name="dateRegistered">March 21, 2016</string>
+    <string name="deadline">Deadline</string>
+    <string name="dateDeadline">March 23, 2016</string>
+    <string name="responsible">Responsible</string>
+    <string name="person">You</string>
+    <string name="task">You should play with your cat</string>
+    <string name="back_button">back button</string>
+</resources>

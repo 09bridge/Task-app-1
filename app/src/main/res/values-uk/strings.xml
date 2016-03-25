@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="head">Нотатки про кота</string>
+    <string name="condition">В роботі</string>
+    <string name="created">Створено</string>
+    <string name="dateCreated">20 марта 2016</string>
+    <string name="registered">Registered</string>
+    <string name="dateRegistered">21 марта 2016</string>
+    <string name="deadline">Вирішити до</string>
+    <string name="dateDeadline">23 марта 2016</string>
+    <string name="responsible">Відповідальний</string>
+    <string name="person">Ти</string>
+    <string name="task">Побався зі своїм котом</string>
+</resources>
