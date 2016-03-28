@@ -17,9 +17,11 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
+//[Comment] Bad design. Colors, paddings
+//[Comment] Images should have same sizes
 public class MainActivity extends AppCompatActivity {
-    String [] dataSet;
-    ImageButton backButton;
+    String [] dataSet; //[Comment] Use google code style. Wrong visibility modifier
+    ImageButton backButton; //[Comment] Use google code style. Wrong visibility modifier
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         dataSet = new String[]{
-                "http://i.dailymail.co.uk/i/pix/2014/04/11/article-2602528-1D06B2D200000578-424_634x471.jpg",
+                "http://i.dailymail.co.uk/i/pix/2014/04/11/article-2602528-1D06B2D200000578-424_634x471.jpg", //[Comment] Hardcode
                 "http://memesvault.com/wp-content/uploads/Sad-Cat-Meme-04.jpg",
                 "https://s-media-cache-ak0.pinimg.com/736x/bf/fd/0e/bffd0e24f35c7e61f0b8bc022b94a213.jpg",
                 "http://raisinghappykittens.com/wp-content/uploads/2015/04/sad_cat.jpg",
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 "http://vignette1.wikia.nocookie.net/steven-universe/images/8/8a/Sad-cat.jpg/revision/latest?cb=20150827161123"
         };
 
-        backButton = (ImageButton) findViewById(R.id.backButton);
+        backButton = (ImageButton) findViewById(R.id.backButton); //[Comment] It's not a button. Use toolbar
 
         RecyclerView imageRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         imageRecyclerView.setHasFixedSize(true);
@@ -54,17 +56,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void closeApp(View v) {
         this.finish();
-    }
+    } //[Comment] Wrong visibility modifier
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu) { //[Comment] Unnecessary code
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) { //[Comment] Unnecessary code
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -78,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ImageViewHolder> {
+    public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ImageViewHolder> { //[Comment] Your adapter? Use correct names. Also should be external
         private String [] mDataSet;
         public class ImageViewHolder extends RecyclerView.ViewHolder {
             ImageView imageViewIcon;
@@ -96,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                                                        int viewType) {
             View v = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.recycler_image_item, parent, false);
-            // set the view's size, margins, paddings and layout parameters
+            // set the view's size, margins, paddings and layout parameters //[Comment] Where?
 
             ImageViewHolder vh = new ImageViewHolder(v);
             return vh;
