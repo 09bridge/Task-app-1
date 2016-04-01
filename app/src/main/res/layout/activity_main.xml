@@ -2,189 +2,160 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <include layout="@layout/tool_bar_layout"/>
-
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity"
-    android:fillViewport="true">
-
- <LinearLayout  android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="@color/background_main">
 
-    android:divider="@drawable/divider"
-    android:dividerPadding="0dp"
-    android:focusable="false"
-    android:showDividers="none">
+    <include layout="@layout/toolbar_layout"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/head"
-        android:textColor="@color/black"
-        android:textSize="@dimen/head_size"
-        android:id="@+id/textHead" />
-
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:divider="@drawable/divider"
-        android:showDividers="middle">
+        android:layout_height="match_parent"
 
-        <TextView
-            android:layout_width="wrap_content"
+        tools:context=".MainActivity"
+        android:fillViewport="true">
+
+        <LinearLayout  android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:background="@drawable/back_rect"
-            android:text="@string/condition"
-            android:textColor="@color/white"
-            android:textSize="@dimen/font_size"
-            android:id="@+id/textCondition"/>
+            android:orientation="vertical"
+            android:focusable="false">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/padding">
-
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/created"
-                android:id="@+id/textCreated"
-                android:textSize="@dimen/font_size"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_gravity="center_horizontal"
+                android:divider="@drawable/divider"
+                android:showDividers="middle">
 
-            <TextView
-                android:layout_width="wrap_content"
+                <RelativeLayout style="@style/LayoutStyle">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/head"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/head_size"
+                        android:id="@+id/textHead"
+                        android:clickable="true"
+                        android:onClick="onClickView"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        style="@style/MainFontStyle"
+                        android:background="@drawable/back_rect"
+                        android:text="@string/condition"
+                        android:textColor="@color/white"
+                        android:id="@+id/textCondition"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/LayoutStyle">
+
+                    <TextView
+                        style="@style/MainFontStyle"
+                        android:text="@string/created"
+                        android:textColor="@color/font_gray"
+                        android:id="@+id/textCreated"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        style="@style/MainFontStyle"
+                        android:text="@string/dateCreated"
+                        android:id="@+id/textDateCreated"
+                        android:textColor="@color/black"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/LayoutStyle">
+
+                    <TextView
+                        style="@style/MainFontStyle"
+                        android:text="@string/registered"
+                        android:textColor="@color/font_gray"
+                        android:id="@+id/textRegistered"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        style="@style/MainFontStyle"
+                        android:text="@string/dateRegistered"
+                        android:id="@+id/textDateRegistered"
+                        android:textColor="@color/black"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/LayoutStyle">
+
+                    <TextView
+                        style="@style/MainFontStyle"
+                        android:text="@string/deadline"
+                        android:textColor="@color/font_gray"
+                        android:id="@+id/textDeadline"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        style="@style/MainFontStyle"
+                        android:text="@string/dateDeadline"
+                        android:id="@+id/textDateDeadline"
+                        android:textColor="@color/black"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/LayoutStyle">
+
+                    <TextView
+                        style="@style/MainFontStyle"
+                        android:text="@string/responsible"
+                        android:textColor="@color/font_gray"
+                        android:id="@+id/textResponsible"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        style="@style/MainFontStyle"
+                        android:text="@string/person"
+                        android:id="@+id/textPerson"
+                        android:textColor="@color/black"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/MainFontStyle"
+                    android:text="@string/task"
+                    android:id="@+id/textTask"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/padding_horizontal"
+                    android:clickable="true"
+                    android:onClick="onClickView"
+                     />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/dateCreated"
-                android:id="@+id/textDateCreated"
-                android:textColor="@color/black"
-                android:textSize="@dimen/font_size"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true" />
-        </RelativeLayout>
+                android:paddingLeft="@dimen/padding_horizontal"
+                android:paddingRight="@dimen/padding_horizontal"
+                />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/padding">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/registered"
-                android:id="@+id/textRegistered"
-                android:textSize="@dimen/font_size"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/dateRegistered"
-                android:id="@+id/textDateRegistered"
-                android:textColor="@color/black"
-                android:textSize="@dimen/font_size"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/padding">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/deadline"
-                android:id="@+id/textDeadline"
-                android:textSize="@dimen/font_size"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/dateDeadline"
-                android:id="@+id/textDateDeadline"
-                android:textColor="@color/black"
-                android:textSize="@dimen/font_size"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/padding"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/responsible"
-                android:id="@+id/textResponsible"
-                android:textSize="@dimen/font_size"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/person"
-                android:id="@+id/textPerson"
-                android:textColor="@color/black"
-                android:textSize="@dimen/font_size"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/task"
-            android:id="@+id/textTask"
-            android:textColor="@color/black"
-            android:textSize="@dimen/font_size"
-             />
-    </LinearLayout>
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/my_recycler_view"
-        android:scrollbars="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-  </LinearLayout>
- </ScrollView>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

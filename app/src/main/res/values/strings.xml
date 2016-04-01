@@ -13,4 +13,13 @@
     <string name="person">You</string>
     <string name="task">You should play with your cat</string>
     <string name="back_button">back button</string>
+    <string name="description_image">Image</string>
+    <string-array name="links">
+        <item>http://i.dailymail.co.uk/i/pix/2014/04/11/article-2602528-1D06B2D200000578-424_634x471.jpg</item>
+        <item>http://memesvault.com/wp-content/uploads/Sad-Cat-Meme-04.jpg</item>
+        <item>https://s-media-cache-ak0.pinimg.com/736x/bf/fd/0e/bffd0e24f35c7e61f0b8bc022b94a213.jpg</item>
+        <item>http://raisinghappykittens.com/wp-content/uploads/2015/04/sad_cat.jpg</item>
+        <item>http://www.she-kicks-she-throws.com/wp-content/uploads/sad-cat-fi-720x340.jpg</item>
+        <item>http://vignette1.wikia.nocookie.net/steven-universe/images/8/8a/Sad-cat.jpg/revision/latest?cb=20150827161123</item>
+    </string-array>
 </resources>
