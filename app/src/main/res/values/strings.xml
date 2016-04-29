@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Task-app-1</string>
-    <string name="action_settings">Settings</string>
     <string name="head">Note cat</string>
     <string name="condition">In progress</string>
     <string name="created">Created</string>
@@ -22,4 +21,19 @@
         <item>http://www.she-kicks-she-throws.com/wp-content/uploads/sad-cat-fi-720x340.jpg</item>
         <item>http://vignette1.wikia.nocookie.net/steven-universe/images/8/8a/Sad-cat.jpg/revision/latest?cb=20150827161123</item>
     </string-array>
+    <string name="title_activity_task">TaskActivity</string>
+    <string name="task_date_0">18 квітня, 2016</string>
+    <string name="task_date_1">27 березня, 2016</string>
+    <string name="task_date_2">22 квітня, 2016</string>
+    <string name="task_category_0">Питання демонтажу МАФ-ів</string>
+    <string name="task_category_1">Питання нарахування боргу за електроенергію</string>
+    <string name="task_category_2">Ремонт та обслуговування ліфтів</string>
+    <string name="task_category_3">Прибирання та санітарний стан території</string>
+    <string name="task_address">Вул. Вадима Гетьмана, 42</string>
+    <string name="task_deadline_0">6 днів</string>
+    <string name="task_deadline_1">Виконано</string>
+    <string name="task_deadline_2">Очікує</string>
+    <string name="task_description">Зробити щось по-людськи</string>
+    <string name="like_count">54</string>
+
 </resources>

@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="white" type="color">#FFF</item>
-    <item name="black" type="color">#000</item>
     <item name="toolbar_color" type="color">#557CAC</item>
     <item name="status_bar_color" type="color">#446389</item>
     <item name="font_gray" type="color">#8E8E8E</item>
     <item name="background_main" type="color">#EBEBEB</item>
+    <color name="white">#fafafa</color>
+    <color name="white_three_30">#4dffffff</color>
+    <color name="faded_blue">#6786b9</color>
+    <color name="black_12">#1f000000</color>
+    <color name="off_blue">#587eae</color>
+    <color name="white_two">#ffffff</color>
+    <color name="dull_blue">#4a76a4</color>
+    <color name="dull_blue_two">#4a76a4</color>
+    <color name="dusty_blue">#6082b4</color>
+    <color name="slate">#425b67</color>
+    <color name="white_three_90">#e5ffffff</color>
+    <color name="white_three">#f2f2f2</color>
+    <color name="black_50">#80323232</color>
+    <color name="mango">#ff9c26</color>
+    <color name="greeny_blue">#45b3c3</color>
+    <color name="black">#000000</color>
 </resources>

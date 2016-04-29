@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:id="@+id/card_view">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/categoryIcon"
+                android:src="@drawable/ic_trash"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/icon_vertical_margin"
+                android:layout_marginLeft="@dimen/icon_horizontal_margin"
+                android:layout_marginStart="@dimen/icon_horizontal_margin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextStyle4"
+                android:text="49"
+                android:id="@+id/likeCount"
+                android:layout_alignBottom="@+id/like"
+                android:layout_toRightOf="@+id/like"
+                android:layout_toEndOf="@+id/like"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/like"
+                android:src="@drawable/ic_thumb_up_black_18dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/icon_vertical_margin"
+                android:paddingRight="@dimen/padding_thumb"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/divider_margin"
+                android:layout_marginStart="@dimen/divider_margin"
+                android:id="@+id/view" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textAppearance="@style/TextStyle2"
+                android:text="Get away all shitgg ligig;g ioutgig;iog; ig;iogi;g iytgyiulff yi;fyilfj"
+                android:id="@+id/taskCategory"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginStart="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:layout_alignTop="@+id/categoryIcon"
+                android:layout_alignLeft="@+id/view"
+                android:layout_alignStart="@+id/view" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:textAppearance="@style/TextStyle3"
+                android:text="Вул. Вадима Гетьмана, 42"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:id="@+id/taskAddress"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="48dp"
+                android:layout_alignLeft="@+id/taskCategory"
+                android:layout_alignStart="@+id/taskCategory" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextStyle4"
+                android:text="Квітень 26, 2016"
+                android:id="@+id/taskDate"
+                android:layout_alignBottom="@+id/like"
+                android:layout_alignLeft="@+id/taskAddress"
+                android:layout_alignStart="@+id/taskAddress" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextStyle4"
+                android:text="14 днів"
+                android:id="@+id/taskDeadline"
+                android:layout_alignTop="@+id/taskDate"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>
